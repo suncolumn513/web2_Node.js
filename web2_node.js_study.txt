@@ -64,3 +64,7 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node nodejs/fileread.js
 
 C:\Users\huiji\Desktop\WEB\web2\node.js\nodejs>node fileread.js
 * dir/w -> 현재 디렉토리에 있는 파일들의 목록을 보여준다.
+
+- 파일을 이용해 본문 구현
+`data/${queryData.id}` : 쿼리스트링에 의해 파일명 생성
+- 페이지가 열릴 때마다 파일의 내용(데이터)을 읽어오기 때문에 node.js를 껐다 키지 않아도 자동으로 반영(리로드)된다.
