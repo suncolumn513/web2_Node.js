@@ -78,3 +78,14 @@ console.log(args[2]);
 pathname을 통해서는 홈과 각각의 페이지를 구분할 수 없다.
 -> 반복문을 중첩하여 구분가능
 : query string 존재여부로 구분
+
+- 빈번한 리스트의 수정을 노드js를 통해 할 수 있는 방법
+-> fs.readdir(testFolder, function(error, filelist){
+  console.log(filelist);
+})
+-> 결과 : C:\Users\huiji\Desktop\WEB\web2\node.js>node nodejs/readdir.js
+[ 'CSS', 'HTML', 'JavaScript' ]
+
+* function의 중괄호 안에 있는 코드를 실행하도록 되어있다. -> filelist가 해당 디렉토리 안에 있는 값으로 구성되어야한다.
+
+- data에 새로운 파일을 추가하게 되면 저절로 리스트가 만들어지는 것을 볼 수 있다.
