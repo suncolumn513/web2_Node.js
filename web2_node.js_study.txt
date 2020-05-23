@@ -50,3 +50,5 @@ ex) http:// opentutorials.org:3000/main?id=HTML&page=12
 -> 쿼리 스트링에 따라 다른 정보를 출력
 ex) http://localhost:3000/?id=html
 ex) http://localhost:3000/?id=css
+* 정보를 다이나믹하게 프로그래밍적으로 생성
+* main.js의 정보만 변경해도 전체의 모든 페이지에 적용이 가능해지는 폭발적인 효과를 가져온다.
