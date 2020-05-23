@@ -47,3 +47,6 @@ ex) http:// opentutorials.org:3000/main?id=HTML&page=12
 -> querystring이 어디에 있는지 알아야한다.
 * 노드js가 갖고 있는 수많은 기능들을 비슷한 것끼리 그룹핑한 것 = 모듈
 -> 사용자가 접속한 url에 따라서 파일들을 읽어준다.
+-> 쿼리 스트링에 따라 다른 정보를 출력
+ex) http://localhost:3000/?id=html
+ex) http://localhost:3000/?id=css
