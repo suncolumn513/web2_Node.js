@@ -124,6 +124,8 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node syntax/sync.js
 : https://pm2.keymetrics.io/ 참고하여 설치하기
 -> http://localhost:3000/ 열기
 -> pm2 log 명령어 실행 : 에러표시해줌
+* pm2 start main.js --watch = 실행
+* pm2 stop main = 중지
 
 - form 태그는 그 폼 안에 있는 각각의 컨트롤들의 사용자가 입력한 정보를 submit했을때, action 속성이 가리키는 서버로 쿼리 스트링의 형태 데이터를 전송하는 html 기능이다.
 - 데이터를 전송할 때 주소의 데이터가 포함되어있다면 그 주소를 무심코 카피해서 누군가에게 보냈을  그사람이 그것을 클릭해 들어오면 우리 서버에 있는 정보가 수정되거나 생성되거나 삭제될 수 있다.
@@ -143,3 +145,12 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node syntax/sync.js
   console.log(roles['designer']);
 - 함수 자체도 값이 될 수 있다.
  -> 배열의 원소, 객체의 원소로써 존재가능하다.
+
+- request.on('data', function(data){
+      body = body + data;
+  });
+: 포스트 방식으로 전송되는 데이터가 많을 경우를 대비하여 제공 -> 조각조각 서버쪽에서 수신할때마다 콜백함수 호출. 호출할때마다 데이터 인자를 통해 수신한 정보를 준다.
+* pase 함수를 통해 객체화하여 정보를 받아낸다.
+
+- response.writeHead(302, {Location: `/?id=${title}`});
+: 리다이렉션
