@@ -166,3 +166,7 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node syntax/sync.js
 
 - 사용자에게 시스템을 열어주면 위험하다. = 보안문제
 -> var filteredId = path.parse(queryData.id).base; 이용
+
+- 사용자가 입력한 정보를 외부로 출력할 때 오염된 정보가 있다면, 그 정보를 소독해야한다.
+- npm을 이용하여 내가 아닌 다른 사람이 만든 모듈을 사용해 애플리케이션을 빠르게 만들 수 있다.
+-> var sanitizeHtml = require('sanitize-html'); 이용
