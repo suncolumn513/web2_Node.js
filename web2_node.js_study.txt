@@ -163,3 +163,6 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node syntax/sync.js
 // 이 문장을 쓰고 있는 모듈이 담겨있는 js 파일에 있는 여러 기능들 중에 M이 가리키는 객체를 이 모듈 밖에서도 쓸 수 있도록 exports하겠다는 의미
 - require('./mpart.js') // 모듈을 가져오기
 - 모듈로 잘 쪼개서 코드의 가독성 높이기
+
+- 사용자에게 시스템을 열어주면 위험하다. = 보안문제
+-> var filteredId = path.parse(queryData.id).base; 이용
