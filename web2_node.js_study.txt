@@ -154,3 +154,5 @@ C:\Users\huiji\Desktop\WEB\web2\node.js>node syntax/sync.js
 
 - response.writeHead(302, {Location: `/?id=${title}`});
 : 리다이렉션
+
+- 사용자에게 UI 최소화하기
