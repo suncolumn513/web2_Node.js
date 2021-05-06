@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/suncolumn513/web2_Node.js#readme",
   "dependencies": {
-    "sanitize-html": "^1.26.0"
+    "sanitize-html": "^2.3.2"
   }
 }
